@@ -41,7 +41,7 @@
                 </li>
             </ul>
         </div>
-        <button class="md:hidden" id="openMenuBtn">
+        <button class="md:hidden z-[9999]" id="openMenuBtn">
             <i class="bx bx-menu text-white text-3xl"></i>
         </button>
     </div>
@@ -52,27 +52,27 @@
         <div>
             <ul>
                 <li class="text-center my-4">
-                    <a href="#home" class="font-semibold text-white">
+                    <a href="#home" class="font-semibold text-white aNavBtn">
                         Home
                     </a>
                 </li>
                 <li class="text-center my-4">
-                    <a href="#about" class="font-semibold text-white">
+                    <a href="#about" class="font-semibold text-white aNavBtn">
                         About
                     </a>
                 </li>
                 <li class="text-center my-4">
-                    <a href="#project" class="font-semibold text-white">
+                    <a href="#project" class="font-semibold text-white aNavBtn">
                         Project
                     </a>
                 </li>
                 <li class="text-center my-4">
-                    <a href="" class="font-semibold text-white">
+                    <a href="" class="font-semibold text-white aNavBtn">
                         Testimony
                     </a>
                 </li>
                 <li class="text-center my-4">
-                    <a href="" class="font-semibold text-white">
+                    <a href="" class="font-semibold text-white aNavBtn">
                         Contact
                     </a>
                 </li>
@@ -107,7 +107,7 @@
                     <p class="text-white tracking-wider">Logo Sangatlah Penting Untuk Melambangkan Citra Kita Terhadap Khalayak Umum Sehingga Mudah Di Kenal</p>
                 </div>
             </div>
-            <div class="flex justify-center items-center relative md:px-8">
+            <div class="flex justify-center items-center relative md:px-8 max-md:pt-16">
                 <button class="transition-all duration-200 hover:bg-white hover:bg-opacity-25" id="imageSlideLeft">
                     <i class="bx bx-chevron-left text-white text-5xl cursor-pointer p-1"></i>
                 </button>
@@ -121,19 +121,7 @@
                     <img loading="lazy" src="./img/satsetfamily.png" class="max-md:max-w-full">
                 </div>
                 <div class="imageSlide hidden">
-                    <img loading="lazy" src="./img/motorfu.png" class="max-md:max-w-full">
-                </div>
-                <div class="imageSlide hidden">
-                    <img loading="lazy" src="./img/annabelle.png" class="max-md:max-w-full">
-                </div>
-                <div class="imageSlide hidden">
-                    <img loading="lazy" src="./img/CJM LOGO.png" class="max-md:max-w-full">
-                </div>
-                <div class="imageSlide hidden">
-                    <img loading="lazy" src="./img/toko irma for stiker.png" class="max-md:max-w-full">
-                </div>
-                <div class="imageSlide hidden">
-                    <img loading="lazy" src="./img/vaxena.png" class="max-md:max-w-full">
+                    <img loading="lazy" src="./img/jabrix.png" class="max-md:max-w-full">
                 </div>
                 <button class="transition-all duration-200 hover:bg-white hover:bg-opacity-25" id="imageSlideRight">
                     <i class="bx bx-chevron-right text-white text-5xl cursor-pointer p-1"></i>
@@ -141,14 +129,85 @@
             </div>
         </div>
         <div class="section bg-[rgba(13,13,13)] overflow-y-hidden flex flex-col snap-y snap-mandatory scroll-smooth" id="project">
-            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative">
-                
+            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative flex justify-center items-center px-8">
+                <div>
+                    <img src="./img/logo.png" alt="" class="max-w-[50%] mx-auto">
+                </div>
                 <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
                     <i class="bx bx-chevron-down text-white text-5xl cursor-pointer p-1"></i>
                 </button>
             </div>
-            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative">
-                <button class="absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-up">
+            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative flex justify-center items-center px-8">
+                <div>
+                    <img src="./img/zihun_store.png" alt="" class="max-w-[50%] mx-auto">
+                </div>
+                <button class="absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-up mt-4">
+                    <i class="bx bx-chevron-up text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+                <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
+                    <i class="bx bx-chevron-down text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+            </div>
+            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative flex justify-center items-center px-8">
+                <div>
+                    <img src="./img/jabrix.png" alt="" class="max-w-[50%] mx-auto">
+                </div>
+                <button class="absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-up mt-4">
+                    <i class="bx bx-chevron-up text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+                <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
+                    <i class="bx bx-chevron-down text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+            </div>
+            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative flex justify-center items-center px-8">
+                <div>
+                    <img src="./img/motorfu.png" alt="" class="max-w-[50%] mx-auto">
+                </div>
+                <button class="absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-up mt-4">
+                    <i class="bx bx-chevron-up text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+                <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
+                    <i class="bx bx-chevron-down text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+            </div>
+            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative flex justify-center items-center px-8">
+                <div>
+                    <img src="./img/vaxena.png" alt="" class="max-w-[50%] mx-auto">
+                </div>
+                <button class="absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-up mt-4">
+                    <i class="bx bx-chevron-up text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+                <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
+                    <i class="bx bx-chevron-down text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+            </div>
+            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative flex justify-center items-center px-8">
+                <div>
+                    <img src="./img/sprint dinoco back.png" alt="" class="max-w-[50%] mx-auto">
+                </div>
+                <button class="absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-up mt-4">
+                    <i class="bx bx-chevron-up text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+                <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
+                    <i class="bx bx-chevron-down text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+            </div>
+            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative flex justify-center items-center px-8">
+                <div>
+                    <img src="./img/CJM LOGO.png" alt="" class="max-w-[50%] mx-auto">
+                </div>
+                <button class="absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-up mt-4">
+                    <i class="bx bx-chevron-up text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+                <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
+                    <i class="bx bx-chevron-down text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+            </div>
+            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative flex justify-center items-center px-8">
+                <div>
+                    <img src="./img/shiro.png" alt="" class="max-w-[50%] mx-auto">
+                </div>
+                <button class="absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-up mt-4">
                     <i class="bx bx-chevron-up text-white text-5xl cursor-pointer p-1"></i>
                 </button>
                 <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
@@ -174,6 +233,14 @@
         const openMenuBtn = document.getElementById("openMenuBtn");
         const closeMenuBtn = document.getElementById("closeMenuBtn");
         const menu = document.getElementById("menu");
+
+        const aNavBtn = document.querySelectorAll(".aNavBtn");
+
+        aNavBtn.forEach(v => {
+            v.addEventListener("click", () => {
+                menu.classList.add("translate-x-full");
+            })
+        })
 
         openMenuBtn.addEventListener("click", () => {
             menu.classList.remove("translate-x-full");
