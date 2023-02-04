@@ -26,9 +26,9 @@
 
 @layer utilites {
     .text-bg-clip {
-        /* background: linear-gradient(to right, rgba(255, 120, 206), rgba(255, 204, 221)); */
-        /* background: linear-gradient(to right, rgba(255, 77, 139, 0.75), rgba(255, 179, 205)); */
         -webkit-background-clip: text;
+        background-clip: text;
+        -moz-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
