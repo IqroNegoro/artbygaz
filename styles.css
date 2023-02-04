@@ -817,6 +817,10 @@ video {
   flex-direction: column;
 }
 
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
 .items-center{
   align-items: center;
 }
@@ -1163,6 +1167,10 @@ video {
     margin-top: 2rem;
   }
 
+  .max-md\:mb-4{
+    margin-bottom: 1rem;
+  }
+
   .max-md\:max-w-full{
     max-width: 100%;
   }
@@ -1177,6 +1185,14 @@ video {
 
   .max-md\:grid-rows-\[1fr\2c 2fr\]{
     grid-template-rows: 1fr 2fr;
+  }
+
+  .max-md\:flex-row{
+    flex-direction: row;
+  }
+
+  .max-md\:flex-col{
+    flex-direction: column;
   }
 
   .max-md\:items-start{
