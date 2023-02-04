@@ -12,7 +12,7 @@
         <div class="">
             <img src="./img/logo.png" alt="" class="w-16 h-16">
         </div>
-        <div class="">
+        <div class="hidden md:flex">
             <ul>
                 <li class="inline-block mx-3">
                     <a href="#home" class="font-semibold text-white">
@@ -41,6 +41,43 @@
                 </li>
             </ul>
         </div>
+        <button class="md:hidden" id="openMenuBtn">
+            <i class="bx bx-menu text-white text-3xl"></i>
+        </button>
+    </div>
+    <div class="fixed top-0 right-0 z-[999] w-full h-screen md:hidden bg-[rgba(8,8,8)] flex justify-center items-center translate-x-full transition duration-300" id="menu">
+        <button class="absolute top-0 right-0 m-4" id="closeMenuBtn">
+            <i class="bx bx-x text-white text-3xl"></i>
+        </button>
+        <div>
+            <ul>
+                <li class="text-center my-4">
+                    <a href="#home" class="font-semibold text-white">
+                        Home
+                    </a>
+                </li>
+                <li class="text-center my-4">
+                    <a href="#about" class="font-semibold text-white">
+                        About
+                    </a>
+                </li>
+                <li class="text-center my-4">
+                    <a href="#project" class="font-semibold text-white">
+                        Project
+                    </a>
+                </li>
+                <li class="text-center my-4">
+                    <a href="" class="font-semibold text-white">
+                        Testimony
+                    </a>
+                </li>
+                <li class="text-center my-4">
+                    <a href="" class="font-semibold text-white">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
     <div class="fixed z-10 top-1/2 right-0 transition-all duration-200 hover:bg-white hover:bg-opacity-25 mr-4 animate-pointing-right" id="arrowRight">
         <i class="bx bx-chevron-right text-white text-5xl cursor-pointer p-1"></i>
@@ -51,7 +88,7 @@
     <div class="flex flex-row snap-x snap-mandatory h-screen w-full overflow-x-scroll pt-16 scroll-smooth" id="parentSection">
         <div class="section bg-[rgba(13,13,13)] grid grid-cols-1 md:grid-cols-[1fr,2fr]" id="home">
             <div class="flex justify-center items-center">
-                <img src="./img/logo.png" class="max-md:max-w-[50%] md:max-w-[75%] animate-scaling img">
+                <img src="./img/logo.png" class="max-w-[75%] animate-scaling img">
             </div>
             <div class="flex items-center justify-center">
                 <div class="text-center relative">
@@ -82,7 +119,7 @@
                 </button>
             </div>
         </div>
-        <div class="section bg-[rgba(13,13,13)] overflow-y-scroll flex flex-col snap-y snap-mandatory scroll-smooth" id="project">
+        <div class="section bg-[rgba(13,13,13)] overflow-y-hidden flex flex-col snap-y snap-mandatory scroll-smooth" id="project">
             <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative">
                 
                 <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
@@ -112,6 +149,20 @@
         const projectSection = document.getElementById("project");
         const pointingUp = document.querySelectorAll(".pointing-up");
         const pointingDown = document.querySelectorAll(".pointing-down");
+
+        const openMenuBtn = document.getElementById("openMenuBtn");
+        const closeMenuBtn = document.getElementById("closeMenuBtn");
+        const menu = document.getElementById("menu");
+
+        openMenuBtn.addEventListener("click", () => {
+            menu.classList.remove("translate-x-full");
+        });
+
+        closeMenuBtn.addEventListener("click", () => {
+            menu.classList.add("translate-x-full");
+        });
+
+        
 
         let imageIndex = 0;
 
