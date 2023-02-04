@@ -973,8 +973,20 @@ video {
     order: 1;
   }
 
+  .max-md\:mt-16{
+    margin-top: 4rem;
+  }
+
+  .max-md\:mt-8{
+    margin-top: 2rem;
+  }
+
   .max-md\:max-w-full{
     max-width: 100%;
+  }
+
+  .max-md\:max-w-\[75\%\]{
+    max-width: 75%;
   }
 
   .max-md\:grid-rows-\[1fr\2c 2fr\]{
@@ -1001,6 +1013,10 @@ video {
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:max-w-\[75\%\]{
+    max-width: 75%;
   }
 
   .md\:grid-cols-\[1fr\2c 2fr\]{
