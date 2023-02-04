@@ -111,8 +111,29 @@
                 <button class="transition-all duration-200 hover:bg-white hover:bg-opacity-25" id="imageSlideLeft">
                     <i class="bx bx-chevron-left text-white text-5xl cursor-pointer p-1"></i>
                 </button>
-                <div>
-                    <img src="./img/zihun_store.png" id="imageSlide" class="max-md:max-w-full">
+                <div class="imageSlide">
+                    <img src="./img/zihun_store.png" class="max-md:max-w-full">
+                </div>
+                <div class="imageSlide hidden">
+                    <img loading="lazy" src="./img/hahahihigarage.png" class="max-md:max-w-full">
+                </div>
+                <div class="imageSlide hidden">
+                    <img loading="lazy" src="./img/satsetfamily.png" class="max-md:max-w-full">
+                </div>
+                <div class="imageSlide hidden">
+                    <img loading="lazy" src="./img/motorfu.png" class="max-md:max-w-full">
+                </div>
+                <div class="imageSlide hidden">
+                    <img loading="lazy" src="./img/annabelle.png" class="max-md:max-w-full">
+                </div>
+                <div class="imageSlide hidden">
+                    <img loading="lazy" src="./img/CJM LOGO.png" class="max-md:max-w-full">
+                </div>
+                <div class="imageSlide hidden">
+                    <img loading="lazy" src="./img/toko irma for stiker.png" class="max-md:max-w-full">
+                </div>
+                <div class="imageSlide hidden">
+                    <img loading="lazy" src="./img/vaxena.png" class="max-md:max-w-full">
                 </div>
                 <button class="transition-all duration-200 hover:bg-white hover:bg-opacity-25" id="imageSlideRight">
                     <i class="bx bx-chevron-right text-white text-5xl cursor-pointer p-1"></i>
@@ -162,8 +183,6 @@
             menu.classList.add("translate-x-full");
         });
 
-        
-
         let imageIndex = 0;
 
         let observer = new IntersectionObserver((entries, observer) => {
@@ -194,24 +213,24 @@
             parentSection.scrollTo(parentSection.scrollLeft - parentSection.offsetWidth, 0)
         })
 
-        let imageSlideArray = [
-            "zihun_store.png",
-            "hahahihigarage.png",
-            "sprint dinoco back.png"
-        ]
+        let imageSlideArray = document.querySelectorAll(".imageSlide");
 
         imageSlideLeft.addEventListener("click", () => {
+            console.log(imageSlideArray)
+            imageSlideArray[imageIndex].classList.add("hidden");
             if (imageIndex <= 0) {
                 imageIndex = imageSlideArray.length - 1
             } else imageIndex--;
-            imageSlide.src = "./img/" + imageSlideArray[imageIndex];
+            imageSlideArray[imageIndex].classList.remove("hidden");
         })
 
         imageSlideRight.addEventListener("click", () => {
+            console.log(imageSlideArray)
+            imageSlideArray[imageIndex].classList.add("hidden");
             if (imageIndex >= imageSlideArray.length - 1) {
                 imageIndex = 0
             } else imageIndex++;
-            imageSlide.src = "./img/" + imageSlideArray[imageIndex];
+            imageSlideArray[imageIndex].classList.remove("hidden");
         })
 
         pointingUp.forEach(v => {
