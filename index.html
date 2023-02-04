@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./boxicons/css/boxicons.css">
 </head>
 <body class="overflow-hidden font-nunito">
-    <div class="fixed w-full h-16 top-0 left-0 flex justify-between items-center flex-row px-4 bg-[rgba(8,8,8)]">
+    <div class="fixed w-full z-[2] h-16 top-0 left-0 flex justify-between items-center flex-row px-4 bg-[rgba(8,8,8)]">
         <div class="">
             <img src="./img/logo.png" alt="" class="w-16 h-16">
         </div>
@@ -41,14 +41,14 @@
                 </li>
             </ul>
         </div>
-        <button class="md:hidden z-[9999]" id="openMenuBtn">
+        <button class="md:hidden" id="openMenuBtn">
             <i class="bx bx-menu text-white text-3xl"></i>
         </button>
     </div>
-    <div class="fixed z-10 top-1/2 right-0 transition-all duration-200 hover:bg-white hover:bg-opacity-25 mr-4 animate-pointing-right" id="arrowRight">
+    <div class="fixed z-[1] top-1/2 right-0 transition-all duration-200 hover:bg-white hover:bg-opacity-25 mr-4 animate-pointing-right" id="arrowRight">
         <i class="bx bx-chevron-right text-white text-5xl cursor-pointer p-1"></i>
     </div>
-    <div class="fixed z-10 top-1/2 left-0 transition-all duration-200 hover:bg-white hover:bg-opacity-25 ml-4 animate-pointing-left" id="arrowLeft">
+    <div class="fixed z-[1] top-1/2 left-0 transition-all duration-200 hover:bg-white hover:bg-opacity-25 ml-4 animate-pointing-left" id="arrowLeft">
         <i class="bx bx-chevron-left text-white text-5xl cursor-pointer p-1"></i>
     </div>
     <div class="flex flex-row snap-x snap-mandatory h-screen w-full overflow-x-scroll pt-16 scroll-smooth" id="parentSection">
@@ -179,17 +179,16 @@
             </div>
         </div>
         <div class="section bg-[rgba(13,13,13)] flex justify-center items-center" id="contact">
-            <div class="w-1/2 flex justify-between">
-                <div class="overflow-hidden w-1/2 relative text-center">
+            <div class="w-11/12 md:w-1/2 flex justify-between">
+                <div class="overflow-hidden w-full md:w-1/2 relative text-center">
                     <i class="bx bxl-instagram text-white text-6xl text-bg-clip bg-gradient-to-b from-pink-500 to-blue-300 peer"></i>
                     <div class="absolute top-0 left-0 w-full h-full bg-[rgba(13,13,13)] -translate-x-full transition-all duration-500 peer-hover:translate-x-0 hover:translate-x-0 flex justify-center items-center">
                         <a href="https://www.instagram.com/artbygaz/" target="_blank" class="text-white font-semibold text-2xl text-center tracking-widest">
                             Art By Gaz
                         </a>                        
                     </div>
-                    <!-- https://www.instagram.com/artbygaz/ -->
                 </div>
-                <div class="overflow-hidden w-1/2 relative text-center">
+                <div class="overflow-hidden w-full md:w-1/2 relative text-center">
                     <i class="bx bxl-whatsapp text-white text-6xl text-bg-clip bg-gradient-to-b from-pink-500 to-blue-300 peer"></i>
                     <div class="absolute top-0 left-0 w-full h-full bg-[rgba(13,13,13)] translate-x-full transition-all duration-500 peer-hover:translate-x-0 hover:translate-x-0 flex justify-center items-center">
                         <a href="https://api.whatsapp.com/send?phone=6285860672417" target="_blank" class="text-white font-semibold text-2xl text-center tracking-widest">
@@ -200,7 +199,7 @@
             </div>
         </div>
     </div>
-    <div class="fixed top-0 right-0 z-[999] w-full h-screen md:hidden bg-[rgba(8,8,8)] flex justify-center items-center translate-x-full transition duration-300" id="menu">
+    <div class="fixed top-0 right-0 z-[3] w-full h-screen md:hidden bg-[rgba(8,8,8)] flex justify-center items-center translate-x-full transition duration-300" id="menu">
         <button class="absolute top-0 right-0 m-4" id="closeMenuBtn">
             <i class="bx bx-x text-white text-3xl"></i>
         </button>

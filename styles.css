@@ -589,6 +589,18 @@ video {
   z-index: 9999;
 }
 
+.z-\[1\]{
+  z-index: 1;
+}
+
+.z-\[2\]{
+  z-index: 2;
+}
+
+.z-\[3\]{
+  z-index: 3;
+}
+
 .m-4{
   margin: 1rem;
 }
@@ -678,6 +690,14 @@ video {
 
 .w-1\/2{
   width: 50%;
+}
+
+.w-3\/4{
+  width: 75%;
+}
+
+.w-11\/12{
+  width: 91.666667%;
 }
 
 .max-w-\[75\%\]{
@@ -1175,6 +1195,10 @@ video {
 
   .md\:hidden{
     display: none;
+  }
+
+  .md\:w-1\/2{
+    width: 50%;
   }
 
   .md\:max-w-\[75\%\]{
