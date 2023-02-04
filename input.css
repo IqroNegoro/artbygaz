@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .section {
+        @apply snap-center shrink-0 w-full;
+    }
+}
+
+@layer base {
+    ::-webkit-scrollbar {
+        @apply bg-opacity-0 h-1;
+    }
+
+    ::-webkit-scrollbar-track-piece {
+        @apply bg-[rgba(8,8,8)];
+    }
+
+    ::-webkit-scrollbar-thumb {
+        @apply bg-black;
+    }
+}
+
+@layer utilites {
+    .text-bg-clip {
+        /* background: linear-gradient(to right, rgba(255, 120, 206), rgba(255, 204, 221)); */
+        /* background: linear-gradient(to right, rgba(255, 77, 139, 0.75), rgba(255, 179, 205)); */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

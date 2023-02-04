@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./boxicons/css/boxicons.css">
+</head>
+<body class="overflow-hidden font-nunito">
+    <div class="fixed w-full h-16 top-0 left-0 flex justify-between items-center flex-row px-4 bg-[rgba(8,8,8)]">
+        <div class="">
+            <img src="./img/logo.png" alt="" class="w-16 h-16">
+        </div>
+        <div class="">
+            <ul>
+                <li class="inline-block mx-3">
+                    <a href="#home" class="font-semibold text-white">
+                        Home
+                    </a>
+                </li>
+                <li class="inline-block mx-3">
+                    <a href="#about" class="font-semibold text-white">
+                        About
+                    </a>
+                </li>
+                <li class="inline-block mx-3">
+                    <a href="#project" class="font-semibold text-white">
+                        Project
+                    </a>
+                </li>
+                <li class="inline-block mx-3">
+                    <a href="" class="font-semibold text-white">
+                        Testimony
+                    </a>
+                </li>
+                <li class="inline-block mx-3">
+                    <a href="" class="font-semibold text-white">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="fixed z-10 top-1/2 right-0 transition-all duration-200 hover:bg-white hover:bg-opacity-25 mr-4 animate-pointing-right" id="arrowRight">
+        <i class="bx bx-chevron-right text-white text-5xl cursor-pointer p-1"></i>
+    </div>
+    <div class="fixed z-10 top-1/2 left-0 transition-all duration-200 hover:bg-white hover:bg-opacity-25 ml-4 animate-pointing-left" id="arrowLeft">
+        <i class="bx bx-chevron-left text-white text-5xl cursor-pointer p-1"></i>
+    </div>
+    <div class="flex flex-row snap-x snap-mandatory h-screen w-full overflow-x-scroll pt-16 scroll-smooth" id="parentSection">
+        <div class="section bg-[rgba(13,13,13)] grid grid-cols-1 md:grid-cols-[1fr,2fr]" id="home">
+            <div class="flex justify-center items-center">
+                <img src="./img/logo.png" class="max-md:max-w-[50%] md:max-w-[75%] animate-scaling img">
+            </div>
+            <div class="flex items-center justify-center">
+                <div class="text-center relative">
+                    <h1 class="text-white font-extrabold text-7xl tracking-widest md:tracking-[0.5em] text-bg-clip bg-gradient-to-r from-[rgba(255,120,206)] to-[rgba(255,204,221)]">ART BY GAZ</h1>
+                    <p class="text-white text-lg tracking-widest">Buat Logo Murah Dengan Kualitas Mewah</p>
+                    <div class="absolute w-full h-full bg-[rgba(13,13,13)] top-0 left-0 duration-300 transition-all" id="hiddenText"></div>
+                </div>
+            </div>
+        </div>
+        <div class="section bg-[rgba(13,13,13)] overflow-hidden grid grid-cols-[repeat(2,1fr)] px-12" id="about">
+            <div class=" flex justify-center items-center">
+                <div class="text-center">
+                    <h1 class="text-white tracking-[0.5em] text-5xl font-semibold text-bg-clip bg-gradient-to-r from-[#003da8] to-[#ff6464]">LOGO</h1>
+                    <p class="text-white mt-8 tracking-wider font-medium">Logo Adalah Tanda, Lambang, Simbol Yang Menjadi Identitas Dari Suatu Individu, Kelompok Maupun Organisasi Agar Mudah Di Ingat Atau Di Kenal</p>
+                    <br>
+                    <p class="text-white tracking-wider">Logo Sangatlah Penting Untuk Melambangkan Citra Kita Terhadap Khalayak Umum Sehingga Mudah Di Kenal</p>
+                </div>
+            </div>
+            <div class="flex justify-center items-center relative px-8">
+                <button class="transition-all duration-200 hover:bg-white hover:bg-opacity-25" id="imageSlideLeft">
+                    <i class="bx bx-chevron-left text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+                <div>
+                    <img src="./img/zihun_store.png" id="imageSlide">
+                </div>
+                <button class="transition-all duration-200 hover:bg-white hover:bg-opacity-25" id="imageSlideRight">
+                    <i class="bx bx-chevron-right text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+            </div>
+        </div>
+        <div class="section bg-[rgba(13,13,13)] overflow-y-scroll flex flex-col snap-y snap-mandatory scroll-smooth" id="project">
+            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative">
+                
+                <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
+                    <i class="bx bx-chevron-down text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+            </div>
+            <div class="section w-full shrink-0 h-[calc(100vh-4rem)] relative">
+                <button class="absolute top-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-up">
+                    <i class="bx bx-chevron-up text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+                <button class="absolute bottom-0 left-1/2 -translate-x-1/2 transition-all duration-200 hover:bg-white hover:bg-opacity-25 pointing-down">
+                    <i class="bx bx-chevron-down text-white text-5xl cursor-pointer p-1"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script>
+        const parentSection = document.getElementById("parentSection");
+        const section = document.querySelectorAll(".section");
+        const arrowRight = document.getElementById("arrowRight");
+        const arrowLeft = document.getElementById("arrowLeft");
+        
+        const imageSlide = document.getElementById("imageSlide");
+        const imageSlideLeft = document.getElementById("imageSlideLeft");
+        const imageSlideRight = document.getElementById("imageSlideRight");
+        
+        const projectSection = document.getElementById("project");
+        const pointingUp = document.querySelectorAll(".pointing-up");
+        const pointingDown = document.querySelectorAll(".pointing-down");
+
+        let imageIndex = 0;
+
+        let observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(v => {
+                if (v.target.id == 'home') {
+                    if (v.isIntersecting) {
+                        v.target.querySelector("#hiddenText").classList.add("translate-x-full");
+                    } else {
+                        v.target.querySelector("#hiddenText").classList.remove("translate-x-full");
+                    }
+                }
+            })
+        },{
+            root: parentSection,
+            rootMargin: "0px",
+            threshold: [1.0]
+        });
+
+        section.forEach(v => {
+            observer.observe(v)
+        })
+
+        arrowRight.addEventListener("click", () => {
+            parentSection.scrollTo(parentSection.scrollLeft + parentSection.offsetWidth, 0)
+        })
+
+        arrowLeft.addEventListener("click", () => {
+            parentSection.scrollTo(parentSection.scrollLeft - parentSection.offsetWidth, 0)
+        })
+
+        let imageSlideArray = [
+            "zihun_store.png",
+            "hahahihigarage.png",
+            "sprint dinoco back.png"
+        ]
+
+        imageSlideLeft.addEventListener("click", () => {
+            if (imageIndex <= 0) {
+                imageIndex = imageSlideArray.length - 1
+            } else imageIndex--;
+            imageSlide.src = "./img/" + imageSlideArray[imageIndex];
+        })
+
+        imageSlideRight.addEventListener("click", () => {
+            if (imageIndex >= imageSlideArray.length - 1) {
+                imageIndex = 0
+            } else imageIndex++;
+            imageSlide.src = "./img/" + imageSlideArray[imageIndex];
+        })
+
+        pointingUp.forEach(v => {
+            v.addEventListener("click", () => {
+                projectSection.scrollTo(0, projectSection.scrollTop - projectSection.offsetHeight)
+            })
+        })
+        
+        pointingDown.forEach(v => {
+            v.addEventListener("click", () => {
+                projectSection.scrollTo(0, projectSection.scrollTop + projectSection.offsetHeight)
+            })
+        })
+
+    </script>
+</body>
+</html>
