@@ -6,7 +6,7 @@
 
 @layer components {
     .section {
-        @apply snap-center shrink-0 w-full;
+        @apply snap-center shrink-0 w-full overflow-hidden;
     }
 }
 
