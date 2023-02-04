@@ -1004,6 +1004,10 @@ video {
     margin-bottom: 1rem;
   }
 
+  .max-md\:-mt-16{
+    margin-top: -4rem;
+  }
+
   .max-md\:max-w-full{
     max-width: 100%;
   }
